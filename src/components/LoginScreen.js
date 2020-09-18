@@ -37,40 +37,39 @@ import {
           spacing={2}
           direction="column"
           justify="center"
-          alignItems="center"
-        >
-
-          <form className="login-form" onSubmit={this.login}>
+          alignItems="center">
+            <form className="login-form" onSubmit={this.login}>
             <Grid item>
-            <TextField
-              required
-              onChange={this.handleTextChange}
-              value={this.state.username}
-              name="username"
-              label="Username"
-              type="text" />
-              </Grid>
-              <Grid item>
-            <TextField
-              required
-              onChange={this.handleTextChange}
-              value={this.state.password}
-              name="password"
-              label="Password"
-              type="password" />
-              </Grid>
+              <TextField
+                required
+                onChange={this.handleTextChange}
+                value={this.state.username}
+                name="username"
+                label="Username"
+                type="text" />
+            </Grid>
+            <Grid item>
+              <TextField
+                required
+                onChange={this.handleTextChange}
+                value={this.state.password}
+                name="password"
+                label="Password"
+                type="password" />
+            </Grid>
             <Grid item>
             <br/>
-            <Button
+              <Button
               type="submit"
               className="login-button"
               variant="contained"
               fullWidth
-              color="default">Login</Button>
-              </Grid>
+              color="default">Login
+              </Button>
+            </Grid>
           </form>
-              </Grid>
-              </Container>
+        </Grid>
+      </Container>
       </div>
     );
 }

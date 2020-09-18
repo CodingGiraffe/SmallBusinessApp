@@ -26,8 +26,6 @@ class AddListing extends Component {
         const payload = { ...this.state }
         payload.id = this.props.carTotal + 1
         delete payload.open
-        console.log("THE CAR", payload)
-        this.props.addCar(payload)
         console.log(this.props)
         this.props.addListing(payload)
         this.setState({ open: false })
@@ -60,7 +58,6 @@ class AddListing extends Component {
                 </div>
                 <div>
                     <Dialog open={this.state.open} onClose={this.toggleDialog} >
-                        <DialogTitle>Add New Car</DialogTitle>
                         <DialogTitle>Add Business</DialogTitle>
                         <DialogContent>
                             <form 

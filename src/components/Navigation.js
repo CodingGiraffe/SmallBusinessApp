@@ -33,7 +33,7 @@ render() {
                     : null
                     }
                     <li className="nav-list-item">
-                        <Link to="/dashboard">Dasboard</Link>
+                        <Link to="/dashboard">Dasboard </Link>
                         {
                             cookies["loggedIn"] ?  
                             <Link onClick={() => {
